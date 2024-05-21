@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&family=Satisfy&display=swap');
+
 *{
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 
 #sushi-banner{
@@ -33,7 +43,7 @@
 #sushi-main{
   background-color: rgb(229, 154, 101);
   display: grid;
-  grid-template-columns: 220px repeat(3,1fr) 200px;
+  grid-template-columns: 240px repeat(3,1fr) 200px;
   grid-template-rows: 100px 50px 70px 70px 1fr;
   height: 1000px;
   margin-top: 10px;
@@ -68,6 +78,27 @@
   background-color: rgb(56, 208, 29);
   grid-column: 1/2;
   grid-row: 3/6;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.menu-sushi h3{
+  text-align: center;
+}
+.menu-sushi li a{
+  font-size: 0.75rem;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 10px;
+}
+.menu-sushi h3, .menu-sushi li{
+  background-color: aqua;
+  width: 100%;
+  height: 1.75rem;
+  display: inline-block;
+  text-transform: uppercase;
+  padding-left: 10px;
 }
 .desc-sushi{
   background-color: rgb(49, 247, 15);
