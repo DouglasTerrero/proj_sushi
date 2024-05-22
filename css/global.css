@@ -23,8 +23,9 @@ a{
 .banner{
   width: 100%;
   height: 100px;
-  background-color: brown;
   grid-column: 1/2;
+  background: brown url(../img/sushi2_1440.jpg) center center fixed;
+  background-size: cover;
 }
 .radio{
   width: 100%;
@@ -38,6 +39,9 @@ a{
   margin-top: -45px;
   background-color: aqua;
   grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #sushi-main{
@@ -52,6 +56,8 @@ a{
   background-color: aqua;
   grid-column-start:1;
   grid-column-end:4;
+  background: brown url(../img/sushi2_1440.jpg) center center fixed;
+  background-size: cover;
 }
 .enquete{
   background-color: rgb(89, 157, 157);
@@ -63,16 +69,23 @@ a{
   background-color: rgb(131, 233, 233);
   grid-column: 5/5;
   grid-row: 1/6;
+  background: brown url(../img/sushi2_1440.jpg) center center fixed;
+  background-size: cover;
 }
 .animation-static{
   background-color: rgb(113, 215, 93);
   grid-row: 3/3;
   grid-column: 2/4;
+  background: brown url(../img/sushi2_1440.jpg) center center fixed;
+  background-size: cover;
 }
 .animation-dinamic{
   background-color: rgb(135, 199, 123);
   grid-row: 4/4;
   grid-column: 2/4;
+  background: brown url(../img/sushi2_1440.jpg) center center fixed;
+  background-size: cover;
+  opacity: .5;
 }
 .menu-sushi{
   background-color: rgb(56, 208, 29);
@@ -84,24 +97,83 @@ a{
 }
 .menu-sushi h3{
   text-align: center;
+  padding: 6px 0;
+  margin-top: 6px;
 }
 .menu-sushi li a{
   font-size: 0.75rem;
   width: 100%;
   height: 100%;
-  display: inline-block;
-  padding: 10px;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
 }
 .menu-sushi h3, .menu-sushi li{
   background-color: aqua;
-  width: 100%;
-  height: 1.75rem;
+  width: 95%;
+  margin-left: 6px;
+  height: 2rem;
   display: inline-block;
   text-transform: uppercase;
   padding-left: 10px;
+  margin-bottom: 4px;
+}
+.menu-sushi a::before{
+  content: "⚪";
+  position: absolute;
+  left: -5px;
+  top: 8px;
+}
+.sushi-menu a::after{
+  content: "➕";
+  position: absolute;
+  right: 10px;
+  top: 6px;
+}
+.menu-sushi a:hover::before{
+  content: "🔴";
+}
+.container-desc{
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.container-desc h1{
+  margin-bottom: 20px;
+  font-family: Satisfy,serif;
+  font-size: 2.5rem;
+}
+.container-desc p{
+  margin-bottom: 20px;
 }
 .desc-sushi{
   background-color: rgb(49, 247, 15);
   grid-column: 2/5;
   grid-row: 5/6;
+}
+.video-layout{
+  display: flex;
+  gap: 20px;
+}
+.video-embbed{
+  width: 620px;
+  height: 400px;
+  background-color: seagreen;
+}
+.video-desc{
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+  text-align: center;
+}
+.video-desc h2{
+  font-family: Satisfy, serif;
+  font-size: 1.75rem;
+}
+.img-sushi{
+  width: 200px;
+  height: 140px;
+  background-color: beige;
 }
