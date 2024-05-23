@@ -1,0 +1,51 @@
+.uramaki,
+.temaki,
+.hossomaki,
+.hotroll,
+.sashimi,
+.temari,
+.niguiri{
+  position: relative;
+}
+.uramaki:hover .dropright-menu,
+.temaki:hover .dropright-menu,
+.hossomaki:hover .dropright-menu,
+.hotroll:hover .dropright-menu,
+.sashimi:hover .dropright-menu,
+.temari:hover .dropright-menu,
+.niguiri:hover .dropright-menu{
+  display: block;
+  animation: show-right .3s forwards;
+}
+
+.uramaki .dropright-menu,
+.temaki .dropright-menu,
+.hossomaki .dropright-menu,
+.hotroll .dropright-menu,
+.sashimi .dropright-menu,
+.temari .dropright-menu,
+.niguiri .dropright-menu{
+  position: absolute;
+  top: 0px;
+  left: 220px;
+  width: 160px;
+  background-color: black;
+  padding: 4px 2px 0px 0px;
+  z-index: 100;
+  display: none;
+  
+}
+.dropright-menu a::after{
+  content: "";
+}
+
+@keyframes show-right{
+  from{
+    opacity: 0;
+    transform: translate3d(20px,0,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}

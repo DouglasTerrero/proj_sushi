@@ -133,6 +133,9 @@ a{
 .menu-sushi a:hover::before{
   content: "🔴";
 }
+.menu-sushi a:hover::after{
+  transform: rotate(45deg);
+}
 .container-desc{
   max-width: 90%;
   margin: 0 auto;
