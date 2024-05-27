@@ -1,0 +1,15 @@
+.anuncio-sup,
+.enquete,
+.animation-static,
+.animation-dinamic{
+  display:none
+}
+
+.menu-sushi{
+  grid-row: 1/6;
+}
+
+.desc-sushi{
+  grid-row: 1/6;
+}
+
